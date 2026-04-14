@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "324d2cb46523ffaa61de19ae40c66fef",
+    "content-hash": "7ddc4b725be60ec0b34317087978bb5f",
     "packages": [
         {
             "name": "brick/math",
@@ -5725,6 +5725,68 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.4.0"
             },
             "time": "2025-12-02T11:56:42+00:00"
+        },
+        {
+            "name": "tomshaw/laravel-database-export",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomshaw/laravel-database-export.git",
+                "reference": "0bed19746bb8646ef628eec06bff311ee89cb74b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomshaw/laravel-database-export/zipball/0bed19746bb8646ef628eec06bff311ee89cb74b",
+                "reference": "0bed19746bb8646ef628eec06bff311ee89cb74b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.20",
+                "orchestra/testbench": "^11.0",
+                "pestphp/pest": "^3.0|^4.0",
+                "phpstan/phpstan": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TomShaw\\DatabaseExport\\Providers\\DatabaseExportServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TomShaw\\DatabaseExport\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Shaw",
+                    "email": "tomshaw@tomshaw.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel database export console command.",
+            "keywords": [
+                "artisan",
+                "console",
+                "database",
+                "exporter",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/tomshaw/laravel-database-export/issues",
+                "source": "https://github.com/tomshaw/laravel-database-export/tree/v0.5.0"
+            },
+            "time": "2026-04-04T21:55:06+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

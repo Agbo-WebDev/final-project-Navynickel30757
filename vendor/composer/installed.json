@@ -9289,6 +9289,71 @@
             "install-path": "../tijsverkoyen/css-to-inline-styles"
         },
         {
+            "name": "tomshaw/laravel-database-export",
+            "version": "v0.5.0",
+            "version_normalized": "0.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomshaw/laravel-database-export.git",
+                "reference": "0bed19746bb8646ef628eec06bff311ee89cb74b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomshaw/laravel-database-export/zipball/0bed19746bb8646ef628eec06bff311ee89cb74b",
+                "reference": "0bed19746bb8646ef628eec06bff311ee89cb74b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.5"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.20",
+                "orchestra/testbench": "^11.0",
+                "pestphp/pest": "^3.0|^4.0",
+                "phpstan/phpstan": "^2.0"
+            },
+            "time": "2026-04-04T21:55:06+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TomShaw\\DatabaseExport\\Providers\\DatabaseExportServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "TomShaw\\DatabaseExport\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Shaw",
+                    "email": "tomshaw@tomshaw.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel database export console command.",
+            "keywords": [
+                "artisan",
+                "console",
+                "database",
+                "exporter",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/tomshaw/laravel-database-export/issues",
+                "source": "https://github.com/tomshaw/laravel-database-export/tree/v0.5.0"
+            },
+            "install-path": "../tomshaw/laravel-database-export"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.3",
             "version_normalized": "5.6.3.0",

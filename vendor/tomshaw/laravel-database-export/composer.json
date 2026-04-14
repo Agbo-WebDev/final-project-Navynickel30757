@@ -1,0 +1,59 @@
+{
+    "name": "tomshaw/laravel-database-export",
+    "description": "A Laravel database export console command.",
+    "keywords": [
+        "laravel",
+        "console",
+        "artisan",
+        "database",
+        "exporter"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Shaw",
+            "email": "tomshaw@tomshaw.us",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.5"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.20",
+        "larastan/larastan": "^3.0",
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TomShaw\\DatabaseExport\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TomShaw\\DatabaseExport\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint --config pint.json"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TomShaw\\DatabaseExport\\Providers\\DatabaseExportServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
